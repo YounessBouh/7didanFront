@@ -30,7 +30,7 @@ function Login() {
          }  
          authenticate();
          await getLoggedIn();
-          navigate("/"); 
+          navigate("/DashboardHome"); 
 
         } catch(err)
         {
