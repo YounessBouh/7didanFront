@@ -17,11 +17,11 @@ function Header() {
            </div>
            {
             loggedIn ? (
-              <div className='header__right' onClick={()=> navigate("/Login")}>
+              <div className='header__right' onClick={()=> navigate("/DashboardHome")}>
              <p>Login</p>
              </div>
             ) : (
-              <div className='header__right' onClick={()=> navigate("/DashboardHome")}>
+              <div className='header__right' onClick={()=> navigate("/Login")}>
              <p>Dashboard</p>
            </div>
             )
