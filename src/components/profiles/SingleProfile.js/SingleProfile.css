@@ -1,0 +1,39 @@
+.SingleProfilesItem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    background-color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .singleProfile__left{
+    display: flex;
+    flex-direction: column;
+  }
+  .ProfilesItem__info{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .galleryProfile__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .galleryProfile__imagesURL{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+ 
+  

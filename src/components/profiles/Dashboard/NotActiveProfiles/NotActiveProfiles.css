@@ -1,0 +1,82 @@
+.NoActiveProfile{
+   
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 320px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #999;
+}
+.searchNonActiveMobileButtons{
+    margin:20px;
+    direction: rtl;
+}
+.searchNonActiveMobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchNonActiveMobileUsers{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.searchNonActiveMobile > button{
+    margin:5px;
+}
+.searchNonActiveMobile > input{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashbordcategory__options > span{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dashbordcategory__options{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashbordcategory__options > Button{
+    margin: 6px;
+}
+.dashbordcategory__options > Input{
+    font-weight: bold;
+   
+}
+.searchNonActiveByPaid{
+    direction: rtl;
+}
+
+.List{
+    margin:10px;
+}
+.dashbordcategory__options__right{
+    margin-left: 35px;
+}
+.dashbordProfile__options__left > p{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.pages{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.pages > button{
+   width: 200px;
+   height: 60px;
+   margin-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: black;
+  margin-bottom: 50px;
+}

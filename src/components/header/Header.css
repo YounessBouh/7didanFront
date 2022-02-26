@@ -1,0 +1,29 @@
+.header{
+    position: sticky;
+    top: 0;
+   z-index: 100;
+   background-color:black;
+   border-bottom: 1px solid black;
+   height: 100px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.header__left {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header__right{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header__right :hover{
+    cursor: pointer;
+}
+.header__left :hover{
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.categoryListing{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.CategoryItem{
+    height: 80px;
+    width: 80px;
+    background:#DC143C;
+    color: white;
+    text-align: center;
+    margin-right:10px ;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    border:1px solid #ffaa22;
+    box-shadow: 4px 5px 0px 0px #030f27;
+    padding:15px 15px;
+}
+.CategoryName{
+    text-align: center;
+}
+
+.CategoryItem :hover{
+    cursor: pointer;
+}

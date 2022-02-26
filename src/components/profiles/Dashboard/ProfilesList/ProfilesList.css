@@ -1,0 +1,51 @@
+.dashbordcategory{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    background-color: white;
+}
+
+.dashbordcategory__options__left > p{
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.dashbordcategory__options{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.List{
+    margin:10px;
+}
+
+.zoneList__headerInput{
+    width: 240px;
+    height: 40px;
+    padding: 5px;
+    margin-right: 80px;
+    background-color: rgb(247, 243, 243);
+}
+.btnLoadZones{
+    background-color: #A52A2A;
+    height: 55px;
+    width: 220px;
+    margin-right:10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.profileList__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profileList__headerSearch > form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

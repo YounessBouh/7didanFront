@@ -1,0 +1,29 @@
+.dashbordcategory{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: white;
+}
+
+.dashbordcategory__options > span{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dashbordcategory__options{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashbordcategory__options > Button{
+    margin: 6px;
+}
+.dashbordcategory__options > Input{
+    font-weight: bold;
+}
+.List{
+    margin:10px;
+}

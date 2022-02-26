@@ -1,0 +1,29 @@
+.zoneListing{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.ZoneItem{
+    margin-right:5px ;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+    background:#DC143C;
+    color: white;
+    border:1px solid #ffaa22;
+    box-shadow: 4px 5px 0px 0px goldenrod;
+    border-radius:18px;
+    padding:7px 15px;
+}
+
+.ZoneItem :hover{
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.removeItem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.zoneName{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}

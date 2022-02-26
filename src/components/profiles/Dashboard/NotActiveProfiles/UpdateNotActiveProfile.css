@@ -1,0 +1,27 @@
+.profileNotActive{
+    margin-top:50px;
+    margin-left: 200px;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 300px;
+}
+
+.ProfileNotActive__options__left{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.ProfileNotActive__options__left > p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    text-align: center;
+}
+.ProfileNotActive__options__right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ProfileNotActive__options__right > button{
+    margin-right: 20px;
+}

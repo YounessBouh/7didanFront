@@ -1,0 +1,27 @@
+.cityListing{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.CityItem{
+    margin:15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+    background:#DC143C;
+    color: white;
+    border:1px solid #ffaa22;
+    box-shadow: 4px 5px 0px 0px #030f27;
+    border-radius:18px;
+    padding:7px 15px;
+}
+
+.CityItem :hover{
+    cursor: pointer;
+}

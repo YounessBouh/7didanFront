@@ -1,0 +1,23 @@
+.createItem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.username__option{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    padding: 5px;
+}
+
+.password__option{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    padding: 5px;
+    width: 350px;
+}
