@@ -75,7 +75,8 @@ function UpdateProfile() {
         e.preventDefault();
         await updateProfile();
         localStorage.clear();
-         window.location.href='/ProfilesList'
+       //  window.location.href='/ProfilesList'
+         window.location.href='/'
     }
 
     

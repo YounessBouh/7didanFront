@@ -23,7 +23,8 @@ function DeleteCategory() {
        }  
        removeCategory();
        localStorage.clear();
-       window.location.href='/CategoryList'
+      // window.location.href='/CategoryList'
+      window.location.href='/'
      }
      
     return (

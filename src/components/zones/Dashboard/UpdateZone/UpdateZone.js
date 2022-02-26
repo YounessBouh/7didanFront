@@ -23,7 +23,8 @@ function UpdateZone() {
        }  
         updateCategory();
         localStorage.clear();
-        window.location.href='/ZonesList'
+      //  window.location.href='/ZonesList'
+        window.location.href='/'
      }
 
      const updateName=(e)=>{

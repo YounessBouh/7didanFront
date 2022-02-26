@@ -84,7 +84,9 @@ function CreateProfile() {
           imagesURL:imagesURL}
         ).then((response) => {
             setProfile(initialState);
-            navigate('/ProfilesList')
+           // navigate('/ProfilesList')
+            navigate('/')
+
         });
        }  
 

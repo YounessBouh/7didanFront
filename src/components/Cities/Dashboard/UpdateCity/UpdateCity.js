@@ -23,7 +23,8 @@ function UpdateCity() {
        }  
        updateCategory();
        localStorage.clear();
-       window.location.href='/CitiesList'
+     //  window.location.href='/CitiesList'
+       window.location.href='/'
      }
 
      const updateName=(e)=>{

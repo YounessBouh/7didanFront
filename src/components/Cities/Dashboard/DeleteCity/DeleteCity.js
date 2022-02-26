@@ -20,7 +20,8 @@ function DeleteCity() {
        }  
        removeCity();
        localStorage.clear();
-       window.location.href='/CitiesList'
+     //  window.location.href='/CitiesList'
+       window.location.href='/'
      }
      
     return (

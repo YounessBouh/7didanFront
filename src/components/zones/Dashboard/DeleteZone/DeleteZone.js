@@ -19,7 +19,8 @@ function DeleteZone() {
        }  
        removeZone();
        localStorage.clear();
-       window.location.href='/ZonesList'
+     //  window.location.href='/ZonesList'
+       window.location.href='/'
      }
      
     return (

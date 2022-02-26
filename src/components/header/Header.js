@@ -18,11 +18,11 @@ function Header() {
            {
             loggedIn ? (
               <div className='header__right' onClick={()=> navigate("/DashboardHome")}>
-             <p>Login</p>
+             <p>Dashboard</p>
              </div>
             ) : (
               <div className='header__right' onClick={()=> navigate("/Login")}>
-             <p>Dashboard</p>
+             <p>Login</p>
            </div>
             )
            }

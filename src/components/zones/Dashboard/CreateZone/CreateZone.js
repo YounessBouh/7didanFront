@@ -33,7 +33,8 @@ function CreateZone() {
            }  
            addZone();
            localStorage.clear();
-           window.location.href='/ZonesList'
+          // window.location.href='/ZonesList'
+           window.location.href='/'
       }
 
       const changeCity=(e)=>{

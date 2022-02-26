@@ -19,7 +19,8 @@ function CreateCategory() {
             await  axios.post('https://7didan.com/api/v1/categories',{name:inputValue});
            }  
            addCategory();
-           window.location.href='/CategoryList'
+          // window.location.href='/CategoryList'
+           window.location.href='/'
       }
 
   

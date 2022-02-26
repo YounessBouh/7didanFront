@@ -39,7 +39,8 @@ function DeleteProfile() {
 
     const removeRequest=()=>{ 
        removeProfile();
-       window.location.href='/ProfilesList'
+     //  window.location.href='/ProfilesList'
+       window.location.href='/'
      }
 
 

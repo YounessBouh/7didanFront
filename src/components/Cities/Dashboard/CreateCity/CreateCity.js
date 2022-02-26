@@ -18,7 +18,8 @@ function CreateCity() {
         await  axios.post('https://7didan.com/api/v1/locations',{name:inputValue})
             .then((response) => {});}  
            addCategory();
-           window.location.href='/CitiesList'
+         //  window.location.href='/CitiesList'
+           window.location.href='/'
       }
 
   

@@ -23,7 +23,8 @@ function UpdateCategory() {
        }  
        updateCategory();
        localStorage.clear();
-       window.location.href='/CategoryList'
+      // window.location.href='/CategoryList'
+      window.location.href='/'
      }
 
      const updateName=(e)=>{
