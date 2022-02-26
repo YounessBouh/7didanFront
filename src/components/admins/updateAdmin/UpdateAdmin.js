@@ -21,7 +21,7 @@ function UpdateAdmin() {
       if(role.trim() === "") return alert('is empty')
       console.log(role)
        async function updateAdmin(){
-        await  axios.put(`https://www.optimusmaroc.com/api/v1/auth/update/${id}`,{role:role}).then((response) => {
+        await  axios.put(`https://7didan.com/api/v1/auth/update/${id}`,{role:role}).then((response) => {
            });
        }  
         updateAdmin();

@@ -15,7 +15,7 @@ function DeleteCity() {
     
     const removeRequest=()=>{ 
        async function removeCity(){
-        await  axios.delete(`https://www.optimusmaroc.com/api/v1/locations/${id}`).then((response) => {
+        await  axios.delete(`https://7didan.com/api/v1/locations/${id}`).then((response) => {
            });
        }  
        removeCity();

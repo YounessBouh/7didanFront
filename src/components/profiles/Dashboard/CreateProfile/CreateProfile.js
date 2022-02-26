@@ -38,17 +38,17 @@ function CreateProfile() {
     
     
      async function loadCities(){
-      await  axios.get('https://www.optimusmaroc.com/api/v1/locations').then((response) => {
+      await  axios.get('https://7didan.com/api/v1/locations').then((response) => {
        setCities(response.data.data)
        });} 
 
        async function loadCategories(){
-        await  axios.get('https://www.optimusmaroc.com/api/v1/categories').then((response) => {
+        await  axios.get('https://7didan.com/api/v1/categories').then((response) => {
             setCategories(response.data.data)
        });} 
          
          async function loadZones(){
-            await  axios.get(`https://www.optimusmaroc.com/api/v1/zones?cityId=${profile.cityId}`).then((response) => {
+            await  axios.get(`https://7didan.com/api/v1/zones?cityId=${profile.cityId}`).then((response) => {
                 setZones(response.data.data)
        });} 
         
@@ -76,7 +76,7 @@ function CreateProfile() {
           return alert('cannot be empty');
            
 
-          await  axios.post('https://www.optimusmaroc.com/api/v1/index',{FullName:profile.FullName,
+          await  axios.post('https://7didan.com/api/v1/index',{FullName:profile.FullName,
           address:profile.address,description:profile.description,cityId:profile.cityId,
           categoryId:profile.categoryId,zoneId:profile.zoneId,phone:profile.phone,days:profile.days,
           showPhone:profile.showPhone,isPaid:initialState.isPaid,images:initialState.pics,
@@ -125,7 +125,7 @@ function CreateProfile() {
                     
                 let formData = new FormData()
                 formData.append('file', file)
-                const res = await axios.post('https://www.optimusmaroc.com/api/v1/upload', formData, {
+                const res = await axios.post('https://7didan.com/api/v1/upload', formData, {
                     headers: {'content-type': 'multipart/form-data' } //Authorization: token
                  })
              //   setImages(res.data)

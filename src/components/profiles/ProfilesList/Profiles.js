@@ -26,7 +26,7 @@ const Cities=()=>{
   useEffect(() => {
     if(city==null || category==null || zone==null) return navigate("/");
     async function loadData(){
-      await  axios.get(`https://www.optimusmaroc.com/api/v1/index?cityId=${city._id}&zoneId=${zone._id}&categoryId=${category._id}`).then((response) => {
+      await  axios.get(`https://7didan.com/api/v1/index?cityId=${city._id}&zoneId=${zone._id}&categoryId=${category._id}`).then((response) => {
         setProfiles(response.data.data)
          });
         }  

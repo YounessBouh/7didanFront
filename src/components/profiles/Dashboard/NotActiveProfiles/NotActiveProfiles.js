@@ -32,7 +32,7 @@ function NotActiveProfiles() {
            {
             setPage(totalPages);
            }
-          await  axios.get(`https://www.optimusmaroc.com/api/v1/index/isNotActive?page=${page}`).then((response) => {
+          await  axios.get(`https://7didan.com/api/v1/index/isNotActive?page=${page}`).then((response) => {
              const { data, pages: totalPages,count } = response.data;
               setProfiles(data);
               setTotalPages(totalPages);
@@ -45,7 +45,7 @@ function NotActiveProfiles() {
 
 
          async function loadFilteredProfiles(){
-          await  axios.get(`https://www.optimusmaroc.com/api/v1/index/filteredByPhone?phone=${mobile}`).then((response) => {
+          await  axios.get(`https://7didan.com/api/v1/index/filteredByPhone?phone=${mobile}`).then((response) => {
            setProfiles(response.data.data)                                                              
             });
            }   

@@ -17,7 +17,7 @@ function CitiesList() {
 
     useEffect(() => {
         async function loadData(){
-          await  axios.get('https://www.optimusmaroc.com/api/v1/locations').then((response) => {
+          await  axios.get('https://7didan.com/api/v1/locations').then((response) => {
             setCities(response.data.data)
              });
             }  

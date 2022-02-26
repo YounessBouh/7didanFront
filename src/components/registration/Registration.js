@@ -25,7 +25,7 @@ function Registration() {
              return alert('username should be min 4 characters and password min 6 characters ')
           
              async function authenticate(){
-                await  axios.post('https://www.optimusmaroc.com/api/v1/auth/register',{name:username,password:password}
+                await  axios.post('https://7didan.com/api/v1/auth/register',{name:username,password:password}
                 )
                }  
               

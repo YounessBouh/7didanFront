@@ -10,7 +10,7 @@ function LogOutBtn() {
 
 
   async function logOut() {
-     await axios.get("https://www.optimusmaroc.com/api/v1/auth/logout");
+     await axios.get("https://7didan.com/api/v1/auth/logout");
  //   await axios.get(
   //    "https://mern-auth-template-tutorial.herokuapp.com/auth/logout"
   //  );

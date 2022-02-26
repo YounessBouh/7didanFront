@@ -20,13 +20,13 @@ function UpdateNotActiveProfile() {
      
     async function updateProfile(){
        if(days.trim()==='') return alert('days cannot be empty')
-      await  axios.put(`https://www.optimusmaroc.com/api/v1/index/${id}`,{isActive:true,isPaid:true,})
+      await  axios.put(`https://7didan.com/api/v1/index/${id}`,{isActive:true,isPaid:true,})
             .then((response) => {
          });
      } 
      
      async function removeProfile(){
-      await  axios.delete(`https://www.optimusmaroc.com/api/v1/index/${id}`).then((response) => {
+      await  axios.delete(`https://7didan.com/api/v1/index/${id}`).then((response) => {
          });
      }  
 

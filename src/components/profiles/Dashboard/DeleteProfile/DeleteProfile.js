@@ -32,7 +32,7 @@ function DeleteProfile() {
 
    
     const  removeProfile= async()=>{
-        await  axios.delete(`https://www.optimusmaroc.com/api/v1/index/${id}`).then((response) => {
+        await  axios.delete(`https://7didan.com/api/v1/index/${id}`).then((response) => {
            });
        }      
 

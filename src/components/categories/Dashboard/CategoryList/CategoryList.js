@@ -17,7 +17,7 @@ const CategoryList=()=>{
 
   useEffect(() => {
     async function loadData(){
-      await  axios.get('https://www.optimusmaroc.com/api/v1/categories',).then((response) => {
+      await  axios.get('https://7didan.com/api/v1/categories',).then((response) => {
           setCategories(response.data.data)
          });
         }  

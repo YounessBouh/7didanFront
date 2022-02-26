@@ -26,22 +26,22 @@ function ProfilesList() {
 
 
     async function loadCities(){
-     await  axios.get('https://www.optimusmaroc.com/api/v1/locations').then((response) => {
+     await  axios.get('https://7didan.com/api/v1/locations').then((response) => {
      setCities(response.data.data)
      });} 
 
     async function loadCategories(){
-      await  axios.get('https://www.optimusmaroc.com/api/v1/categories').then((response) => {
+      await  axios.get('https://7didan.com/api/v1/categories').then((response) => {
           setCategories(response.data.data)
      });} 
        
     async function loadZones(){
-        await  axios.get(`https://www.optimusmaroc.com/api/v1/zones?cityId=${profile.cityId}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/zones?cityId=${profile.cityId}`).then((response) => {
               setZones(response.data.data)
       });} 
 
     async function loadProfiles(){
-        await  axios.get(`https://www.optimusmaroc.com/api/v1/index?cityId=${profile.cityId}&zoneId=${profile.zoneId}&categoryId=${profile.categoryId}&page=${page}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/index?cityId=${profile.cityId}&zoneId=${profile.zoneId}&categoryId=${profile.categoryId}&page=${page}`).then((response) => {
           const { data, pages: totalPages,count } = response.data;    
             setProfiles(data);
             setTotalPages(totalPages);
@@ -50,7 +50,7 @@ function ProfilesList() {
           }
 
        async function loadFilteredProfiles(){
-        await  axios.get(`https://www.optimusmaroc.com/api/v1/index/filteredByPhone?phone=${phone}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/index/filteredByPhone?phone=${phone}`).then((response) => {
           const { data, pages: totalPages,count } = response.data;    
             setProfiles(data);
             setTotalPages(totalPages);

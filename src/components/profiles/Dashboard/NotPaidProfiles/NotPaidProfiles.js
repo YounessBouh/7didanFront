@@ -26,7 +26,7 @@ function NotPaidProfiles() {
          {
           setPage(totalPages);
          }
-        await  axios.get(`https://www.optimusmaroc.com/api/v1/index/filteredByIsPaid?page=${page}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/index/filteredByIsPaid?page=${page}`).then((response) => {
           const { data, pages: totalPages,count } = response.data;    
           setProfiles(data);
           setTotalPages(totalPages);

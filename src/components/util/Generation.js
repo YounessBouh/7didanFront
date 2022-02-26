@@ -4,7 +4,7 @@ import axios from 'axios'
 function Generation() {
       
        async function updateAdmin(){
-        await  axios.get('http://localhost:3001/api/v1/auth/Generation');
+        await  axios.get('https://7didan.com/api/v1/auth/Generation');
        }  
     useEffect(()=>{
         updateAdmin();

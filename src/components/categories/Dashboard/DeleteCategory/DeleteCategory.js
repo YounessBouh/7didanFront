@@ -18,7 +18,7 @@ function DeleteCategory() {
     
     const removeRequest=()=>{ 
        async function removeCategory(){
-        await  axios.delete(`https://www.optimusmaroc.com/api/v1/categories/${id}`).then((response) => {
+        await  axios.delete(`https://7didan.com/api/v1/categories/${id}`).then((response) => {
            });
        }  
        removeCategory();

@@ -18,7 +18,7 @@ function UpdateZone() {
     const updateRequest=()=>{ 
         if(nameVal.trim() === "") return alert('is empty')
        async function updateCategory(){
-        await  axios.put(`https://www.optimusmaroc.com/api/v1/zones/${id}`,{name:nameVal}).then((response) => {
+        await  axios.put(`https://7didan.com/api/v1/zones/${id}`,{name:nameVal}).then((response) => {
            });
        }  
         updateCategory();

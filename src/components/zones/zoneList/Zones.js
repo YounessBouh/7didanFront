@@ -22,7 +22,7 @@ const Zones=()=>{
   useEffect(() => {
     if(city==null || category==null) return navigate("/");
     async function loadData(){
-      await  axios.get(`https://www.optimusmaroc.com/api/v1/zones?cityId=${city._id}`).then((response) => {
+      await  axios.get(`https://7didan.com/api/v1/zones?cityId=${city._id}`).then((response) => {
         setZones(response.data.data)
          });
         }  

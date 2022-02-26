@@ -25,7 +25,7 @@ function Login() {
       
 
       async function authenticate(){
-          await  axios.post('https://www.optimusmaroc.com/api/v1/auth/login',{name:username,password:password}
+          await  axios.post('https://7didan.com/api/v1/auth/login',{name:username,password:password}
           );
          }  
          authenticate();

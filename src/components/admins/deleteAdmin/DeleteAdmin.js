@@ -17,7 +17,7 @@ function DeleteAdmin() {
     
     const removeRequest=()=>{ 
        async function removeCategory(){
-        await  axios.delete(`https://www.optimusmaroc.com/api/v1/auth/remove/${id}`).then((response) => {
+        await  axios.delete(`https://7didan.com/api/v1/auth/remove/${id}`).then((response) => {
            });
        }  
        removeCategory();

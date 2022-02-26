@@ -31,7 +31,7 @@ function ZonesList() {
          {
           setPage(totalPages);
          }
-        await  axios.get(`https://www.optimusmaroc.com/api/v1/zones/getFilteredZones?page=${page}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/zones/getFilteredZones?page=${page}`).then((response) => {
            const { data, pages: totalPages,count } = response.data;
             setZones(data);
             setTotalPages(totalPages);
@@ -46,7 +46,7 @@ function ZonesList() {
 
    const SearchZone=()=>{
     async function loadData(){
-      await  axios.get(`https://www.optimusmaroc.com/api/v1/zones?name=${name}`).then((response) => {
+      await  axios.get(`https://7didan.com/api/v1/zones?name=${name}`).then((response) => {
         setZones(response.data.data)
          });
     }  

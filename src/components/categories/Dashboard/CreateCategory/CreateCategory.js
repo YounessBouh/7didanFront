@@ -16,7 +16,7 @@ function CreateCategory() {
         if(inputValue.trim() === "") return alert('is empty')
 
         async function addCategory(){
-            await  axios.post('https://www.optimusmaroc.com/api/v1/categories',{name:inputValue});
+            await  axios.post('https://7didan.com/api/v1/categories',{name:inputValue});
            }  
            addCategory();
            window.location.href='/CategoryList'

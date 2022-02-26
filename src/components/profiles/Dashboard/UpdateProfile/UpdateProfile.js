@@ -62,7 +62,7 @@ function UpdateProfile() {
       }
       
        async function updateRequest(){
-        await  axios.put(`https://www.optimusmaroc.com/api/v1/index/${id}`,{FullName:fullname,
+        await  axios.put(`https://7didan.com/api/v1/index/${id}`,{FullName:fullname,
         address:address,description:description,phone:phone,endSubscription:xdate,imagesURL:imagesURL,
         showPhone:showPhone,isActive:isActive,isPaid:isPaid,images:picsURL}).then((response) => {
            });
@@ -139,7 +139,7 @@ function UpdateProfile() {
 
     const removeImage=(index)=>{
       async function updateImage(){
-        await  axios.post(`https://www.optimusmaroc.com/api/v1/index/updateImage`,{item:box,
+        await  axios.post(`https://7didan.com/api/v1/index/updateImage`,{item:box,
         index:index}).then((response) => {
            });
        } 
@@ -150,7 +150,7 @@ function UpdateProfile() {
 
     const removeImageURL=(indexURL)=>{
       async function updateImageURL(){
-        await  axios.post(`https://www.optimusmaroc.com/api/v1/index/updateImageURL`,{item:box,
+        await  axios.post(`https://7didan.com/api/v1/index/updateImageURL`,{item:box,
         index:indexURL}).then((response) => {
            });
        } 
@@ -175,7 +175,7 @@ function UpdateProfile() {
                   
               let formData = new FormData()
               formData.append('file', file)
-              const res = await axios.post('https://www.optimusmaroc.com/api/v1/upload', formData, {
+              const res = await axios.post('https://7didan.com/api/v1/upload', formData, {
                   headers: {'content-type': 'multipart/form-data' } //Authorization: token
                })
            console.log('res.data',res.data)

@@ -8,23 +8,23 @@ function MakeBackup() {
 
 
     async function loadCategories(){
-        await  axios.get('https://www.optimusmaroc.com/api/v1/categories/all').then((response) => {
+        await  axios.get('https://7didan.com/api/v1/categories/all').then((response) => {
             
            });
         } 
      async function loadCities(){
-      await  axios.get('https://www.optimusmaroc.com/api/v1/locations').then((response) => {
+      await  axios.get('https://7didan.com/api/v1/locations').then((response) => {
          
          });
         }  
        async function loadZones(){
-         await  axios.get('https://www.optimusmaroc.com/api/v1/zones/all').then((response) => {
+         await  axios.get('https://7didan.com/api/v1/zones/all').then((response) => {
         
          });
         } 
        
          async function loadProfiles(){
-         await  axios.get('https://www.optimusmaroc.com/api/v1/index/all').then((response) => {
+         await  axios.get('https://7didan.com/api/v1/index/all').then((response) => {
          
          });
         }  

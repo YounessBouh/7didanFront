@@ -16,7 +16,7 @@ function CreateZone() {
     
     useEffect(() => {
         async function loadData(){
-          await  axios.get('https://www.optimusmaroc.com/api/v1/locations').then((response) => {
+          await  axios.get('https://7didan.com/api/v1/locations').then((response) => {
             setCity(response.data.data)
              });
             }  
@@ -28,7 +28,7 @@ function CreateZone() {
         e.preventDefault()
         if(inputValue.trim() === "" || cityId.trim()==="") return alert('is empty')
         async function addZone(){
-            await  axios.post('https://www.optimusmaroc.com/api/v1/zones',{name:inputValue,cityId:cityId}
+            await  axios.post('https://7didan.com/api/v1/zones',{name:inputValue,cityId:cityId}
             ).then((response) => {});
            }  
            addZone();

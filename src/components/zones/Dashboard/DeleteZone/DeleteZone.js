@@ -14,7 +14,7 @@ function DeleteZone() {
     
     const removeRequest=()=>{ 
        async function removeZone(){
-        await  axios.delete(`https://www.optimusmaroc.com/api/v1/zones/${id}`).then((response) => {
+        await  axios.delete(`https://7didan.com/api/v1/zones/${id}`).then((response) => {
            });
        }  
        removeZone();

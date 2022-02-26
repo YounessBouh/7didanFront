@@ -15,7 +15,7 @@ function CreateCity() {
         e.preventDefault()
         if(inputValue.trim() === "") return alert('is empty')
         async function addCategory(){
-        await  axios.post('https://www.optimusmaroc.com/api/v1/locations',{name:inputValue})
+        await  axios.post('https://7didan.com/api/v1/locations',{name:inputValue})
             .then((response) => {});}  
            addCategory();
            window.location.href='/CitiesList'

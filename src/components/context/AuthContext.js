@@ -7,7 +7,7 @@ function AuthContextProvider(props) {
   const [loggedIn, setLoggedIn] = useState(undefined);
 
   async function getLoggedIn() {
-     const loggedInRes = await axios.get("https://www.optimusmaroc.com/api/v1/auth/loggedIn");
+     const loggedInRes = await axios.get("https://7didan.com/api/v1/auth/loggedIn");
   //  const loggedInRes = await axios.get(
    //   "https://mern-auth-template-tutorial.herokuapp.com/auth/loggedIn"
   //  );

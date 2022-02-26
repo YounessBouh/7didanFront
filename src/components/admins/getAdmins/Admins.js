@@ -17,7 +17,7 @@ function Admins() {
 
   useEffect(() => {
     async function loadData(){
-      await  axios.get('https://www.optimusmaroc.com/api/v1/auth/getAdmins',).then((response) => {
+      await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
           setAdmins(response.data.data)
          });
         }  
