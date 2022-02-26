@@ -15,9 +15,18 @@ function Header() {
            <div className='header__left' onClick={()=> navigate("/")}>
              <p> ترحب بكم optimusmaroc</p>
            </div>
-           <div className='header__right' onClick={()=> navigate("/Login")}>
+           {
+            loggedIn ? (
+              <div className='header__right' onClick={()=> navigate("/Login")}>
              <p>Login</p>
+             </div>
+            ) : (
+              <div className='header__right' onClick={()=> navigate("/DashboardHome")}>
+             <p>Dashboard</p>
            </div>
+            )
+           }
+           
            {loggedIn === true &&
             (
               <div className='header__right'>
