@@ -51,8 +51,11 @@ function Admins() {
          {admins.map((item)=>{
           return (
             <>
-            <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
-              color="primary" onClick={addRequest}>Add New Category</Button>
+            
+              <div>
+              <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
+                  color="primary" onClick={addRequest}>Add User</Button>
+              </div>
               <div  className='dashbordcategory'   key={item._id} >
                   <div className="dashbordcategory__options">
                     <span>{item.name}</span>
