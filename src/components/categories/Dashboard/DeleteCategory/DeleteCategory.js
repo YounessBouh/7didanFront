@@ -22,10 +22,12 @@ function DeleteCategory() {
            });
        }  
        removeCategory();
+       console.log(id);
        localStorage.clear();
       // window.location.href='/CategoryList'
       window.location.href='/'
      }
+     
      
     return (
         <div className='removeItem'>
