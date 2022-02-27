@@ -50,7 +50,7 @@ function Admins() {
         <div className="List">
         {loggedIn===false && navigate("/")}
         
-        <div className='categoryListing'>
+        <div className='adminListing'>
         <div>
         {
           admins.length!==0 &&

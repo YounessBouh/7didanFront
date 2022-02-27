@@ -14,12 +14,9 @@ function UpdateAdmin() {
     const [role,setRole]= useState(localStorage.getItem('role'));
     const id= localStorage.getItem('id');
 
-    console.log(nameVal);
-    console.log(id);
 
     const updateRequest=()=>{ 
       if(role.trim() === "") return alert('is empty')
-      console.log(role)
        async function updateAdmin(){
         await  axios.put(`https://7didan.com/api/v1/auth/update/${id}`,{role:role}).then((response) => {
            });
