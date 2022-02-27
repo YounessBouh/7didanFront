@@ -47,11 +47,12 @@ function Admins() {
     return (
         <div className="List">
         {loggedIn===false && navigate("/")}
+        
+        <div className='categoryListing'>
         <div>
         <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
             color="primary" onClick={addRequest}>Add User</Button>
         </div>
-        <div className='categoryListing'>
          {admins.map((item)=>{
           return (
             <>
@@ -71,7 +72,7 @@ function Admins() {
            )
         })}
        </div>
-       {admins.length===0 && navigate('/DashboardHome')}
+       {admins.length===0 && <Loading />}
      </div>
     )
 }
