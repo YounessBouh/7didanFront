@@ -71,7 +71,7 @@ function Admins() {
            )
         })}
        </div>
-       {admins.length===0 && <Loading />}
+       {admins.length===0 && navigate('/DashboardHome')}
      </div>
     )
 }
