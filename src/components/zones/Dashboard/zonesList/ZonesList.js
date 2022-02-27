@@ -124,7 +124,7 @@ function ZonesList() {
               </div>
              
               </div>
-              <p style={{margin:'20px',fontSize:'16px',fontWeight:'bold'}}>Nr of non active users is {usersNr}: Page  {page} from {totalPages}</p>
+              <p style={{margin:'20px',fontSize:'16px',fontWeight:'bold'}}>Nr of non zones is {usersNr}: Page  {page} from {totalPages}</p>
              
               <div className='cityListing'>
                {zones.map((item)=>{

@@ -24,6 +24,10 @@ function Admins() {
         loadData();
      }, []);
 
+     const addRequest=()=>{  
+      navigate('/Registration');
+     } 
+
      const removeRequest=(item)=>{
       dispatch(setBox(item)) ;
       localStorage.setItem('name',item.name);
@@ -46,6 +50,9 @@ function Admins() {
         <div className='categoryListing'>
          {admins.map((item)=>{
           return (
+            <>
+            <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
+              color="primary" onClick={addRequest}>Add New Category</Button>
               <div  className='dashbordcategory'   key={item._id} >
                   <div className="dashbordcategory__options">
                     <span>{item.name}</span>
@@ -57,6 +64,8 @@ function Admins() {
               </div>
                    
              </div>
+            </>
+
            )
         })}
        </div>
