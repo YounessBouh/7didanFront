@@ -16,12 +16,19 @@ function Admins() {
 
 
   useEffect(() => {
-    async function loadData(){
-      await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
-          setAdmins(response.data.data)
-         });
-        }  
-        loadData();
+    if(admins.length===0)
+    {
+      navigate('/DashboardHome')
+    }else{
+      
+      async function loadData(){
+        await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
+            setAdmins(response.data.data)
+           });
+          }  
+          loadData();
+    }
+   
      }, []);
 
      const addRequest=()=>{  
