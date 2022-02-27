@@ -47,15 +47,14 @@ function Admins() {
     return (
         <div className="List">
         {loggedIn===false && navigate("/")}
+        <div>
+        <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
+            color="primary" onClick={addRequest}>Add User</Button>
+        </div>
         <div className='categoryListing'>
          {admins.map((item)=>{
           return (
             <>
-            
-              <div>
-              <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
-                  color="primary" onClick={addRequest}>Add User</Button>
-              </div>
               <div  className='dashbordcategory'   key={item._id} >
                   <div className="dashbordcategory__options">
                     <span>{item.name}</span>
