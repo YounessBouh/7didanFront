@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import AuthContext from '../context/AuthContext'
+import swal from 'sweetalert';
 import './Login.css'
 
 function Login() {
@@ -28,9 +29,10 @@ function Login() {
           await  axios.post('https://7didan.com/api/v1/auth/login',{name:username,password:password}
           );
          }  
+         swal('Plz refresh the page');
          authenticate();
          await getLoggedIn();
-          navigate("/DashboardHome"); 
+          navigate("/"); 
 
         } catch(err)
         {
