@@ -16,10 +16,6 @@ function Admins() {
 
 
   useEffect(() => {
-    if(admins.length===0)
-    {
-      navigate('/DashboardHome')
-    }else{
       
       async function loadData(){
         await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
@@ -27,7 +23,6 @@ function Admins() {
            });
           }  
           loadData();
-    }
    
      }, []);
 
@@ -57,8 +52,12 @@ function Admins() {
         
         <div className='categoryListing'>
         <div>
-        <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
+        {
+          admins.length!==0 &&
+          <Button style={{fontSize:'18px',fontWeight:'bold'}} size="small" variant="contained"
             color="primary" onClick={addRequest}>Add User</Button>
+        }
+        
         </div>
          {admins.map((item)=>{
           return (
