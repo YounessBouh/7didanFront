@@ -16,14 +16,18 @@ function Admins() {
 
 
   useEffect(() => {
+      try{
       
-      async function loadData(){
-        await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
-            setAdmins(response.data.data)
+        async function loadData(){
+          await  axios.get('https://7didan.com/api/v1/auth/getAdmins',).then((response) => {
+              setAdmins(response.data.data)
            });
-          }  
-          loadData();
-   
+        }  
+        loadData();
+      }catch(error)
+      {
+     console.log('unauthorized user')
+      }
      }, []);
 
      const addRequest=()=>{  
