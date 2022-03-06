@@ -36,7 +36,7 @@ function ProfilesList() {
      });} 
        
     async function loadZones(){
-        await  axios.get(`https://7didan.com/api/v1/zones?cityId=${profile.cityId}`).then((response) => {
+        await  axios.get(`https://7didan.com/api/v1/zones/getZones?cityId=${profile.cityId}`).then((response) => {
               setZones(response.data.data)
       });} 
 
