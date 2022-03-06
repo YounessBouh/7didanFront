@@ -18,7 +18,6 @@ function UpdateCategory() {
 
     const updateRequest=()=>{ 
       if(nameVal.trim() === "") return alert('is empty')
-        console.log('type of allzones after', allzones)
        async function updateCategory(){    
         await  axios.put(`https://7didan.com/api/v1/categories/${id}`,{name:nameVal,allZones:JSON.parse(allzones)})
         .then((response) => {});
@@ -29,7 +28,6 @@ function UpdateCategory() {
          window.location.href='/'
      }
 
-     console.log('first loading allzone ',allzones)
 
      const updateName=(e)=>{
         setNameVal(e.target.value)
@@ -39,8 +37,6 @@ function UpdateCategory() {
       if(e.target.value.trim() === "") return alert('catgeory cannot be empty')
       setAllZoness(e.target.value)
      }
-     console.log('type of allzone befor', allzones)
-     
      
     return (
         <div className='updateItem'>

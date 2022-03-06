@@ -15,14 +15,14 @@ const Zones=()=>{
   const [loading, setLoading] = useState(false)
   const dispatch=useDispatch();
   const navigate = useNavigate();
-
+  const zoneName=JSON.parse(category.allZones)
    
 
 
   useEffect(() => {
     if(city==null || category==null) return navigate("/");
     async function loadData(){
-      await  axios.get(`https://7didan.com/api/v1/zones?cityId=${city._id}`).then((response) => {
+      await  axios.get(`https://7didan.com/api/v1/zones?cityId=${city._id}&allZones=${zoneName}`).then((response) => {
         setZones(response.data.data)
          });
         }  

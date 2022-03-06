@@ -46,7 +46,7 @@ function ZonesList() {
 
    const SearchZone=()=>{
     async function loadData(){
-      await  axios.get(`https://7didan.com/api/v1/zones?name=${name}`).then((response) => {
+      await  axios.get(`https://7didan.com/api/v1/zones/getZones?name=${name}`).then((response) => {
         setZones(response.data.data)
          });
     }  
