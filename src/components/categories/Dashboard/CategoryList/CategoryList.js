@@ -28,7 +28,8 @@ const CategoryList=()=>{
       dispatch(setBox(item)) ;
       localStorage.setItem('name',item.name);
       localStorage.setItem('id',item._id);
-       navigate('/DeleteCategory');
+      console.log(item);
+      navigate('/DeleteCategory');
      }
 
      const addRequest=(item)=>{  
