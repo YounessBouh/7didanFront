@@ -28,6 +28,7 @@ const CategoryList=()=>{
       dispatch(setBox(item)) ;
       localStorage.setItem('name',item.name);
       localStorage.setItem('id',item._id);
+      localStorage.setItem('allZones',item.allZones);
       console.log(item);
       navigate('/DeleteCategory');
      }
@@ -40,6 +41,7 @@ const CategoryList=()=>{
        dispatch(setBox(item)) ;
        localStorage.setItem('name',item.name);
        localStorage.setItem('id',item._id);
+       localStorage.setItem('allZones',item.allZones);
        navigate('/UpdateCategory');
     } 
 
