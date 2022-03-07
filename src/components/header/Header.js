@@ -34,7 +34,7 @@ function Header() {
            
            {loggedIn === true &&
             (
-              <div className='header__right'>
+              <div className='header__rightOption'>
                 <LogOutBtn />
             </div>
             ) 
