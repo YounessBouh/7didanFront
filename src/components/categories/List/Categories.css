@@ -11,7 +11,7 @@
 .CategoryItem{
     height: 80px;
     width: 80px;
-    background:#DC143C;
+    background:black;
     color: white;
     text-align: center;
     margin-right:10px ;
@@ -19,9 +19,8 @@
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    border:1px solid #ffaa22;
-    box-shadow: 4px 5px 0px 0px #030f27;
-    padding:15px 15px;
+    box-shadow: 3px 3px 0px 0px rgba(254,44,85,1.0);
+    padding:10px 15px;
 }
 .CategoryName{
     text-align: center;

@@ -13,8 +13,13 @@ function Header() {
     return (
         <div className='header'>
            <div className='header__left' onClick={()=> navigate("/")}>
-             <p> ترحب بكم optimusmaroc</p>
+             <p> optimusmaroc</p>
            </div>
+
+           <div className='header__center' onClick={()=> navigate("/Contact")}>
+           <p> طريقة التسجيل </p>
+         </div>
+
            {
             loggedIn ? (
               <div className='header__right' onClick={()=> navigate("/DashboardHome")}>
@@ -22,7 +27,7 @@ function Header() {
              </div>
             ) : (
               <div className='header__right' onClick={()=> navigate("/Login")}>
-             <p>Login</p>
+             <p>Log in</p>
            </div>
             )
            }

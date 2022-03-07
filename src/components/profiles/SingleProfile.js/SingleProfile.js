@@ -42,7 +42,7 @@ import defaultImage from '../../images/defaultUser.png'
              <p className='ProfilesItem__span' >{fullName}</p>
              <p className='ProfilesItem__span'>{address}</p>
              <p className='ProfilesItem__span'>{description}</p>
-             <p className='ProfilesItem__span ProfilesItem__info' onClick={handelShowPhone}> 
+             <p className='ProfilesItem__span ProfilesItem__infoButton' onClick={handelShowPhone}> 
                 {showPhone? <strong>{phone}</strong> 
                 : <h3>إظهار الهاتف</h3>  
            }</p>

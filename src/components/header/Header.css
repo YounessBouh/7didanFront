@@ -2,28 +2,54 @@
     position: sticky;
     top: 0;
    z-index: 100;
-   background-color:black;
-   border-bottom: 1px solid black;
-   height: 100px;
+   background-color:white;
+   border-bottom: 1px solid #DCDCDC;
+   height: 90px;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
 }
 
 .header__left {
-    color: white;
-    font-size: 25px;
+    border: 1px solid blue;
+    font-size: 22px;
     font-weight: bold;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: red;
+    box-shadow: 5px 5px 5px 5px #00BFFF;;
+}
+
+.header__center{
+    font-size: 23px;
+    font-weight: bold;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 5px 5px 5px 5px #F08080;
 }
 
 .header__right{
-    color: white;
-    font-size: 25px;
+    background-color: rgba(254,44,85,1.0);
+    font-size: 22px;
     font-weight: bold;
+    padding-top:2px;
+    padding-bottom:6px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color:white;
 }
+
 .header__right :hover{
+    cursor: pointer;
+}
+.header__center :hover{
     cursor: pointer;
 }
 .header__left :hover{
     cursor: pointer;
 }
+
