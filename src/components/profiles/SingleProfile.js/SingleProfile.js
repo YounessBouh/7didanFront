@@ -48,15 +48,12 @@ import defaultImage from '../../images/defaultUser.png'
            }</p>
           </div>
             <div className="singleProfile__right">
-            {profile && profile.images.length===1 ? <img src={profile.images[0].url} alt='oops' 
-                style={{borderRadius:'100px',objectFit:'contain'}} height='180' /> : 
-                <img src={defaultImage} alt='loading'  />}
-            
+                <img src={defaultImage} alt='loading'  />
             </div>
                
         </div>
         <div className='galleryProfile__images'>
-        {profile && profile.images.length>1 && profile.images.map((item)=>{
+        {profile && profile.images.length>0 && profile.images.map((item)=>{
           return (<div   key={item.public_id}>
             <img src={item.url} alt='oops' style={{border:'4px solid white',maxHeight:'400px',margin:'10px',objectFit:'contain'}}  />
             </div>)
